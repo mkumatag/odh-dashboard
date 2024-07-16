@@ -22,7 +22,7 @@ resources:
   - fetch-accelerators.rbac.yaml
 images:
   - name: odh-dashboard
-    newName: na.artifactory.swg-devops.com/sys-linux-power-team-ftp3distro-docker-images-docker-local/odh-dashboard
+    newName: quay.io/morana/odh-dashboard
     newTag: latest
   - name: oauth-proxy
     newName: registry.redhat.io/openshift4/ose-oauth-proxy

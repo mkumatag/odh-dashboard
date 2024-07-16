@@ -18,6 +18,8 @@ COPY --chown=default:root ${SOURCE_CODE} /usr/src/app
 USER default
 
 RUN npm cache clean --force
+RUN npm install -g npm@latest
+RUN npm cache verify
 
 RUN npm ci --omit=optional
 
